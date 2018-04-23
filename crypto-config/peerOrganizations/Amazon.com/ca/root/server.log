@@ -1,0 +1,314 @@
+2018/04/23 14:41:28 [INFO] Created default configuration file at /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root/fabric-ca-server-config.yaml
+2018/04/23 14:41:28 [INFO] Starting server in home directory: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root
+2018/04/23 14:41:28 [DEBUG] CA Home Directory: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root
+2018/04/23 14:41:28 [DEBUG] Making server filenames absolute
+2018/04/23 14:41:28 [DEBUG] Initializing default CA in directory /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root
+2018/04/23 14:41:28 [DEBUG] Init CA with home /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root and config {CA:{Name: Keyfile:ca-key.pem Certfile:ca-cert.pem Chainfile:ca-chain.pem} Signing:0xc420292150 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[3177eb6ed291 localhost] KeyRequest:<nil> CA:0xc42028b7e0 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Registrar.DelegateRoles:client,user,validator,auditor hf.Revoker:1 hf.IntermediateCA:1 hf.Registrar.Roles:client,user,peer,validator,auditor]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) TLS:{false [ldap-server-cert.pem] {ldap-client-key.pem ldap-client-cert.pem}}  } DB:{ Type:sqlite3 Datasource:fabric-ca-server.db TLS:{false [db-server-cert.pem] {db-client-key.pem db-client-cert.pem}}  } CSP:0xc42028be00 Client:<nil> Intermediate:{ParentServer:{URL: CAName:} TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{Name: Secret: Profile: Label: CSR:<nil> CAName:}}}
+2018/04/23 14:41:28 [DEBUG] CA Home Directory: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root
+2018/04/23 14:41:28 [DEBUG] Initializing BCCSP: &{ProviderName:SW SwOpts:0xc4202942a0 Pkcs11Opts:<nil>}
+2018/04/23 14:41:28 [DEBUG] Initializing BCCSP with software options &{SecLevel:256 HashFamily:SHA2 Ephemeral:false FileKeystore:0xc420293ce0 DummyKeystore:<nil>}
+2018/04/23 14:41:28 [DEBUG] Initialize key material
+2018/04/23 14:41:28 [DEBUG] Making CA filenames absolute
+2018/04/23 14:41:28 [DEBUG] Getting CA cert; parent server URL is ''
+2018/04/23 14:41:28 [DEBUG] Root CA certificate request: {CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[3177eb6ed291 localhost] KeyRequest:0xc420298c00 CA:0xc42028b7e0 SerialNumber:}
+2018/04/23 14:41:28 [INFO] generating key: &{A:ecdsa S:256}
+2018/04/23 14:41:28 [DEBUG] generate key from request: algo=ecdsa, size=256
+2018/04/23 14:41:28 [INFO] encoded CSR
+2018/04/23 14:41:28 [DEBUG] validating configuration
+2018/04/23 14:41:28 [DEBUG] validate local profile
+2018/04/23 14:41:28 [DEBUG] profile is valid
+2018/04/23 14:41:28 [INFO] signed certificate with serial number 706914882835817155472215221952925472210653196840
+2018/04/23 14:41:28 [INFO] The CA key and certificate were generated for CA 
+2018/04/23 14:41:28 [INFO] The key was stored by BCCSP provider 'SW'
+2018/04/23 14:41:28 [INFO] The certificate is at: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root/ca-cert.pem
+2018/04/23 14:41:28 [DEBUG] Initializing DB
+2018/04/23 14:41:28 [DEBUG] Using sqlite database, connect to database in home (/etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root/fabric-ca-server.db) directory
+2018/04/23 14:41:28 [DEBUG] Creating SQLite database (/etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root/fabric-ca-server.db) if it does not exist...
+2018/04/23 14:41:28 [DEBUG] Creating users table if it does not exist
+2018/04/23 14:41:28 [DEBUG] Creating affiliations table if it does not exist
+2018/04/23 14:41:28 [DEBUG] Creating certificates table if it does not exist
+2018/04/23 14:41:28 [DEBUG] Successfully opened sqlite3 DB
+2018/04/23 14:41:28 [DEBUG] Initializing identity registry
+2018/04/23 14:41:28 [DEBUG] Loading identity table
+2018/04/23 14:41:28 [DEBUG] Loading identity 'admin'
+2018/04/23 14:41:28 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:28 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+2018/04/23 14:41:28 [DEBUG] DB: Add identity admin
+2018/04/23 14:41:28 [DEBUG] Successfully added identity admin to the database
+2018/04/23 14:41:28 [DEBUG] Registered identity: { Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:-1 Attrs:map[hf.Registrar.Roles:client,user,peer,validator,auditor hf.Registrar.DelegateRoles:client,user,validator,auditor hf.Revoker:1 hf.IntermediateCA:1]  }
+2018/04/23 14:41:28 [DEBUG] Successfully loaded identity table
+2018/04/23 14:41:28 [DEBUG] Initialized DB identity registry
+2018/04/23 14:41:28 [DEBUG] Loading affiliations table
+2018/04/23 14:41:28 [DEBUG] DB: Add affiliation org1
+2018/04/23 14:41:28 [DEBUG] Affiliation 'org1' added
+2018/04/23 14:41:28 [DEBUG] DB: Add affiliation org1.department1
+2018/04/23 14:41:28 [DEBUG] Affiliation 'org1.department1' added
+2018/04/23 14:41:28 [DEBUG] DB: Add affiliation org1.department2
+2018/04/23 14:41:28 [DEBUG] Affiliation 'org1.department2' added
+2018/04/23 14:41:28 [DEBUG] DB: Add affiliation org2
+2018/04/23 14:41:28 [DEBUG] Affiliation 'org2' added
+2018/04/23 14:41:28 [DEBUG] DB: Add affiliation org2.department1
+2018/04/23 14:41:28 [DEBUG] Affiliation 'org2.department1' added
+2018/04/23 14:41:28 [DEBUG] Successfully loaded affiliations table
+2018/04/23 14:41:28 [INFO] Initialized sqlite3 database at /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root/fabric-ca-server.db
+2018/04/23 14:41:28 [DEBUG] Initializing enrollment signer
+2018/04/23 14:41:28 [DEBUG] validating configuration
+2018/04/23 14:41:28 [DEBUG] validate local profile
+2018/04/23 14:41:28 [DEBUG] profile is valid
+2018/04/23 14:41:28 [DEBUG] validate local profile
+2018/04/23 14:41:28 [DEBUG] profile is valid
+2018/04/23 14:41:28 [DEBUG] CA initialization successful
+2018/04/23 14:41:28 [INFO] Home directory for default CA: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/ca/root
+2018/04/23 14:41:28 [DEBUG] 1 CA instance(s) running on server
+2018/04/23 14:41:28 [INFO] Listening on http://0.0.0.0:7104
+2018/04/23 14:41:29 [DEBUG] Received request
+POST /enroll
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{"hosts":["root","root"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBPzCB5wIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV\nBAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEaZk97/hWKgF/+VIQ\nlfkzsjG6weXjm+jMQwJw07JQU3H5xscBwWDTwQs0OMStzq3FBuUPYqU1gYOi+gOv\nTUd5PaAoMCYGCSqGSIb3DQEJDjEZMBcwFQYDVR0RBA4wDIIEcm9vdIIEcm9vdDAK\nBggqhkjOPQQDAgNHADBEAiB7U69ibzISTMs0HDFPIPnehnqnKYn+yMGfVHBXfgY8\nvgIgBZAtZKp0MhnHlxQLrtWDmnsjCqADW9xGEkGJmuf7dEk=\n-----END CERTIFICATE REQUEST-----\n","profile":"tls","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:29 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:29 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:29 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 0
+2018/04/23 14:41:29 [DEBUG] Successfully incremented state for identity admin to 1
+2018/04/23 14:41:29 [DEBUG] DB: identity admin successfully logged in
+2018/04/23 14:41:29 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:29 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:29 [DEBUG] Enrollment request: {SignRequest:{Hosts:[root root] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBPzCB5wIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV
+BAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEaZk97/hWKgF/+VIQ
+lfkzsjG6weXjm+jMQwJw07JQU3H5xscBwWDTwQs0OMStzq3FBuUPYqU1gYOi+gOv
+TUd5PaAoMCYGCSqGSIb3DQEJDjEZMBcwFQYDVR0RBA4wDIIEcm9vdIIEcm9vdDAK
+BggqhkjOPQQDAgNHADBEAiB7U69ibzISTMs0HDFPIPnehnqnKYn+yMGfVHBXfgY8
+vgIgBZAtZKp0MhnHlxQLrtWDmnsjCqADW9xGEkGJmuf7dEk=
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile:tls CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:29 [DEBUG] csrAuthCheck: enrollment ID=admin, CommonName=admin, Subject=<nil>
+2018/04/23 14:41:29 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:29 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:29 [INFO] signed certificate with serial number 678275068992350479720265554719679455357631582611
+2018/04/23 14:41:29 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:29 [DEBUG] Saved serial number as hex 76cee7efc2a09cb12b52c02cb7568c151179d193
+2018/04/23 14:41:29 [DEBUG] saved certificate with serial number 678275068992350479720265554719679455357631582611
+2018/04/23 14:41:29 [INFO] 127.0.0.1:35340 - "POST /enroll" 200
+2018/04/23 14:41:29 [DEBUG] Received request
+POST /enroll
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{"hosts":["3177eb6ed291"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBQTCB6QIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV\nBAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExIc2+hInnKSoBe3Y\n935zzX9umLOSd8pVsrvj9pDOk83S6tzbQjLvgaAmKEFF3gh7S8eY5PgD0+N3fwtR\nOMgl5aAqMCgGCSqGSIb3DQEJDjEbMBkwFwYDVR0RBBAwDoIMMzE3N2ViNmVkMjkx\nMAoGCCqGSM49BAMCA0cAMEQCIElnNpTl2phfJp2a7z9MYaw84U3g4mSTXvFv02bO\njtRqAiA3ssxBR/knKseSoZ6BrfQXdS7xHNqjr2TCuhboUomXxA==\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:29 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:29 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:29 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 1
+2018/04/23 14:41:29 [DEBUG] Successfully incremented state for identity admin to 2
+2018/04/23 14:41:29 [DEBUG] DB: identity admin successfully logged in
+2018/04/23 14:41:29 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:29 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:29 [DEBUG] Enrollment request: {SignRequest:{Hosts:[3177eb6ed291] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBQTCB6QIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV
+BAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExIc2+hInnKSoBe3Y
+935zzX9umLOSd8pVsrvj9pDOk83S6tzbQjLvgaAmKEFF3gh7S8eY5PgD0+N3fwtR
+OMgl5aAqMCgGCSqGSIb3DQEJDjEbMBkwFwYDVR0RBBAwDoIMMzE3N2ViNmVkMjkx
+MAoGCCqGSM49BAMCA0cAMEQCIElnNpTl2phfJp2a7z9MYaw84U3g4mSTXvFv02bO
+jtRqAiA3ssxBR/knKseSoZ6BrfQXdS7xHNqjr2TCuhboUomXxA==
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:29 [DEBUG] csrAuthCheck: enrollment ID=admin, CommonName=admin, Subject=<nil>
+2018/04/23 14:41:29 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:29 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:29 [INFO] signed certificate with serial number 192488241906145407098201118468390522393300548922
+2018/04/23 14:41:29 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:29 [DEBUG] Saved serial number as hex 21b778a666a5f14c4efffe4165244ec8cb13bd3a
+2018/04/23 14:41:29 [DEBUG] saved certificate with serial number 192488241906145407098201118468390522393300548922
+2018/04/23 14:41:29 [INFO] 127.0.0.1:35342 - "POST /enroll" 200
+2018/04/23 14:41:30 [DEBUG] Received request
+POST /register
+Authorization: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNRRENDQWVhZ0F3SUJBZ0lVSWJkNHBtYWw4VXhPLy81QlpTUk95TXNUdlRvd0NnWUlLb1pJemowRUF3SXcKYURFTE1Ba0dBMVVFQmhNQ1ZWTXhGekFWQmdOVkJBZ1REazV2Y25Sb0lFTmhjbTlzYVc1aE1SUXdFZ1lEVlFRSwpFd3RJZVhCbGNteGxaR2RsY2pFUE1BMEdBMVVFQ3hNR1JtRmljbWxqTVJrd0Z3WURWUVFERXhCbVlXSnlhV010ClkyRXRjMlZ5ZG1WeU1CNFhEVEU0TURReU16RTBNell3TUZvWERURTVNRFF5TXpFME16WXdNRm93WFRFTE1Ba0cKQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdURGs1dmNuUm9JRU5oY205c2FXNWhNUlF3RWdZRFZRUUtFd3RJZVhCbApjbXhsWkdkbGNqRVBNQTBHQTFVRUN4TUdSbUZpY21sak1RNHdEQVlEVlFRREV3VmhaRzFwYmpCWk1CTUdCeXFHClNNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJNU0hOdm9TSjV5a3FBWHQyUGQrYzgxL2JwaXprbmZLVmJLNzQvYVEKenBQTjB1cmMyMEl5NzRHZ0ppaEJSZDRJZTB2SG1PVDRBOVBqZDM4TFVUaklKZVdqZVRCM01BNEdBMVVkRHdFQgovd1FFQXdJSGdEQU1CZ05WSFJNQkFmOEVBakFBTUIwR0ExVWREZ1FXQkJUYThNald6V21lY3hldzlyTDNmTzhHCmlsZzdXakFmQmdOVkhTTUVHREFXZ0JUNnVlUzcrZU9wRVc3d1VhdnB3Vjd6YnQ2dldEQVhCZ05WSFJFRUVEQU8KZ2d3ek1UYzNaV0kyWldReU9URXdDZ1lJS29aSXpqMEVBd0lEU0FBd1JRSWhBUHJ6dUVvQUVCTXF3Ukd6UU4zUQo4RENReXdteXpPandSRDR3eElGU0pua09BaUJpWDI4OG93VE9IQUg4VGJoQWtjWWhrcDhzbkwycDQvbEV3ckVUClYxWTJMUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K.MEUCIQCDLb8IAUJk4CRLhl3HsFrPZADLzmTAJabM6913j2B8tgIgVmu+MhYGiIiDx3lEkB6WyYqcokqHkN2AwUDFqRwoNqE=
+{"id":"nodeAdmin","type":"user","secret":"secret","max_enrollments":-1,"affiliation":"org1","attrs":[{"name":"","value":""}]}
+2018/04/23 14:41:30 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:30 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/04/23 14:41:30 [DEBUG] DB: Get certificate by serial (21b778a666a5f14c4efffe4165244ec8cb13bd3a) and aki (fab9e4bbf9e3a9116ef051abe9c15ef36edeaf58)
+2018/04/23 14:41:30 [DEBUG] Successful authentication of 'admin'
+2018/04/23 14:41:30 [DEBUG] Register request received
+2018/04/23 14:41:30 [DEBUG] Received registration request from admin: &{RegistrationRequest:{Name:nodeAdmin Type:user Secret:<<user-specified>> MaxEnrollments:-1 Affiliation:org1 Attributes:[{Name: Value:}] CAName:}}
+2018/04/23 14:41:30 [DEBUG] canRegister - Check to see if user admin can register
+2018/04/23 14:41:30 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:30 [DEBUG] Validate ID
+2018/04/23 14:41:30 [DEBUG] An affiliation is required for identity type user
+2018/04/23 14:41:30 [DEBUG] Validating affiliation: org1
+2018/04/23 14:41:30 [DEBUG] DB: Get affiliation org1
+2018/04/23 14:41:30 [DEBUG] Registering user id: nodeAdmin
+2018/04/23 14:41:30 [DEBUG] Max enrollment value verification - User specified max enrollment: -1, CA max enrollment: -1
+2018/04/23 14:41:30 [DEBUG] DB: Getting identity nodeAdmin
+2018/04/23 14:41:30 [DEBUG] DB: Add identity nodeAdmin
+2018/04/23 14:41:30 [DEBUG] Successfully added identity nodeAdmin to the database
+2018/04/23 14:41:30 [DEBUG] Registration completed - sending response 0xc420028758
+2018/04/23 14:41:30 [INFO] 127.0.0.1:35344 - "POST /register" 200
+2018/04/23 14:41:30 [DEBUG] Received request
+POST /enroll
+Authorization: Basic bm9kZUFkbWluOnNlY3JldA==
+{"hosts":["3177eb6ed291"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBRTCB7QIBADBhMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxEjAQBgNV\nBAMTCW5vZGVBZG1pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABCME0NA7psCN\nFCKRBmhpuKMaax7Vvjl0790rnkmNYNnUdGqG4kZDi5W2QHq9BDPOOfuiDkb01QeG\nw4UQi82CCTWgKjAoBgkqhkiG9w0BCQ4xGzAZMBcGA1UdEQQQMA6CDDMxNzdlYjZl\nZDI5MTAKBggqhkjOPQQDAgNHADBEAiBMQ+VLIVYzQODOClGxup4fXeHQ1NcDN1Cg\nj+qpLJV+gQIgFZ+rnSuA29X57OrZtWRfnfrXbCcVEpuUvLG8djh+YyA=\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:30 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:30 [DEBUG] DB: Getting identity nodeAdmin
+2018/04/23 14:41:30 [DEBUG] DB: Login user nodeAdmin with max enrollments of -1 and state of 0
+2018/04/23 14:41:30 [DEBUG] Successfully incremented state for identity nodeAdmin to 1
+2018/04/23 14:41:30 [DEBUG] DB: identity nodeAdmin successfully logged in
+2018/04/23 14:41:30 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:30 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:30 [DEBUG] Enrollment request: {SignRequest:{Hosts:[3177eb6ed291] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBRTCB7QIBADBhMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxEjAQBgNV
+BAMTCW5vZGVBZG1pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABCME0NA7psCN
+FCKRBmhpuKMaax7Vvjl0790rnkmNYNnUdGqG4kZDi5W2QHq9BDPOOfuiDkb01QeG
+w4UQi82CCTWgKjAoBgkqhkiG9w0BCQ4xGzAZMBcGA1UdEQQQMA6CDDMxNzdlYjZl
+ZDI5MTAKBggqhkjOPQQDAgNHADBEAiBMQ+VLIVYzQODOClGxup4fXeHQ1NcDN1Cg
+j+qpLJV+gQIgFZ+rnSuA29X57OrZtWRfnfrXbCcVEpuUvLG8djh+YyA=
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:30 [DEBUG] csrAuthCheck: enrollment ID=nodeAdmin, CommonName=nodeAdmin, Subject=<nil>
+2018/04/23 14:41:30 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:30 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:30 [INFO] signed certificate with serial number 300684364510292917115737398679368798012136355572
+2018/04/23 14:41:30 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:30 [DEBUG] Saved serial number as hex 34ab2739a7f5faaaba67589915972ecf9b3df6f4
+2018/04/23 14:41:30 [DEBUG] saved certificate with serial number 300684364510292917115737398679368798012136355572
+2018/04/23 14:41:30 [INFO] 127.0.0.1:35346 - "POST /enroll" 200
+2018/04/23 14:41:30 [DEBUG] Received request
+POST /register
+Authorization: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNRRENDQWVhZ0F3SUJBZ0lVSWJkNHBtYWw4VXhPLy81QlpTUk95TXNUdlRvd0NnWUlLb1pJemowRUF3SXcKYURFTE1Ba0dBMVVFQmhNQ1ZWTXhGekFWQmdOVkJBZ1REazV2Y25Sb0lFTmhjbTlzYVc1aE1SUXdFZ1lEVlFRSwpFd3RJZVhCbGNteGxaR2RsY2pFUE1BMEdBMVVFQ3hNR1JtRmljbWxqTVJrd0Z3WURWUVFERXhCbVlXSnlhV010ClkyRXRjMlZ5ZG1WeU1CNFhEVEU0TURReU16RTBNell3TUZvWERURTVNRFF5TXpFME16WXdNRm93WFRFTE1Ba0cKQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdURGs1dmNuUm9JRU5oY205c2FXNWhNUlF3RWdZRFZRUUtFd3RJZVhCbApjbXhsWkdkbGNqRVBNQTBHQTFVRUN4TUdSbUZpY21sak1RNHdEQVlEVlFRREV3VmhaRzFwYmpCWk1CTUdCeXFHClNNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJNU0hOdm9TSjV5a3FBWHQyUGQrYzgxL2JwaXprbmZLVmJLNzQvYVEKenBQTjB1cmMyMEl5NzRHZ0ppaEJSZDRJZTB2SG1PVDRBOVBqZDM4TFVUaklKZVdqZVRCM01BNEdBMVVkRHdFQgovd1FFQXdJSGdEQU1CZ05WSFJNQkFmOEVBakFBTUIwR0ExVWREZ1FXQkJUYThNald6V21lY3hldzlyTDNmTzhHCmlsZzdXakFmQmdOVkhTTUVHREFXZ0JUNnVlUzcrZU9wRVc3d1VhdnB3Vjd6YnQ2dldEQVhCZ05WSFJFRUVEQU8KZ2d3ek1UYzNaV0kyWldReU9URXdDZ1lJS29aSXpqMEVBd0lEU0FBd1JRSWhBUHJ6dUVvQUVCTXF3Ukd6UU4zUQo4RENReXdteXpPandSRDR3eElGU0pua09BaUJpWDI4OG93VE9IQUg4VGJoQWtjWWhrcDhzbkwycDQvbEV3ckVUClYxWTJMUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K.MEQCIBdw8ma8sM5NtlxTvRRHGrD2SV5K7jEVhZYFqv7qixT7AiAyH8NZqL97g8ZWgwTW/6OUdEUaiEV4X1yIQ9/k4lT2Zw==
+{"id":"User1@Amazon.com","type":"user","secret":"secret","max_enrollments":-1,"affiliation":"org1","attrs":[{"name":"","value":""}]}
+2018/04/23 14:41:30 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:30 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/04/23 14:41:30 [DEBUG] DB: Get certificate by serial (21b778a666a5f14c4efffe4165244ec8cb13bd3a) and aki (fab9e4bbf9e3a9116ef051abe9c15ef36edeaf58)
+2018/04/23 14:41:30 [DEBUG] Successful authentication of 'admin'
+2018/04/23 14:41:30 [DEBUG] Register request received
+2018/04/23 14:41:30 [DEBUG] Received registration request from admin: &{RegistrationRequest:{Name:User1@Amazon.com Type:user Secret:<<user-specified>> MaxEnrollments:-1 Affiliation:org1 Attributes:[{Name: Value:}] CAName:}}
+2018/04/23 14:41:30 [DEBUG] canRegister - Check to see if user admin can register
+2018/04/23 14:41:30 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:30 [DEBUG] Validate ID
+2018/04/23 14:41:30 [DEBUG] An affiliation is required for identity type user
+2018/04/23 14:41:30 [DEBUG] Validating affiliation: org1
+2018/04/23 14:41:30 [DEBUG] DB: Get affiliation org1
+2018/04/23 14:41:30 [DEBUG] Registering user id: User1@Amazon.com
+2018/04/23 14:41:30 [DEBUG] Max enrollment value verification - User specified max enrollment: -1, CA max enrollment: -1
+2018/04/23 14:41:30 [DEBUG] DB: Getting identity User1@Amazon.com
+2018/04/23 14:41:30 [DEBUG] DB: Add identity User1@Amazon.com
+2018/04/23 14:41:30 [DEBUG] Successfully added identity User1@Amazon.com to the database
+2018/04/23 14:41:30 [DEBUG] Registration completed - sending response 0xc420028848
+2018/04/23 14:41:30 [INFO] 127.0.0.1:35348 - "POST /register" 200
+2018/04/23 14:41:30 [DEBUG] Received request
+POST /enroll
+Authorization: Basic VXNlcjFAQW1hem9uLmNvbTpzZWNyZXQ=
+{"hosts":["3177eb6ed291"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBTTCB9AIBADBoMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxGTAXBgNV\nBAMMEFVzZXIxQEFtYXpvbi5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASM\n0y/nPRUNkACPmdJCdesR5UIj4A5sLSeQOXNorg4pmrv0D8Ec2aorAk03uSveT5bA\nQgc2lLpRIiSIStOoPWVOoCowKAYJKoZIhvcNAQkOMRswGTAXBgNVHREEEDAOggwz\nMTc3ZWI2ZWQyOTEwCgYIKoZIzj0EAwIDSAAwRQIhAOpg/JT1WbbkpzwLrh4+3A4T\nfX7nTK8J6IMCowYjJLftAiBWjUgnUaB1AR7AgkZDMsXImqZ0E5YBV7Txnifz3soL\ntg==\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:30 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:30 [DEBUG] DB: Getting identity User1@Amazon.com
+2018/04/23 14:41:30 [DEBUG] DB: Login user User1@Amazon.com with max enrollments of -1 and state of 0
+2018/04/23 14:41:30 [DEBUG] Successfully incremented state for identity User1@Amazon.com to 1
+2018/04/23 14:41:30 [DEBUG] DB: identity User1@Amazon.com successfully logged in
+2018/04/23 14:41:30 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:30 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:30 [DEBUG] Enrollment request: {SignRequest:{Hosts:[3177eb6ed291] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBTTCB9AIBADBoMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxGTAXBgNV
+BAMMEFVzZXIxQEFtYXpvbi5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASM
+0y/nPRUNkACPmdJCdesR5UIj4A5sLSeQOXNorg4pmrv0D8Ec2aorAk03uSveT5bA
+Qgc2lLpRIiSIStOoPWVOoCowKAYJKoZIhvcNAQkOMRswGTAXBgNVHREEEDAOggwz
+MTc3ZWI2ZWQyOTEwCgYIKoZIzj0EAwIDSAAwRQIhAOpg/JT1WbbkpzwLrh4+3A4T
+fX7nTK8J6IMCowYjJLftAiBWjUgnUaB1AR7AgkZDMsXImqZ0E5YBV7Txnifz3soL
+tg==
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:30 [DEBUG] csrAuthCheck: enrollment ID=User1@Amazon.com, CommonName=User1@Amazon.com, Subject=<nil>
+2018/04/23 14:41:30 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:30 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:30 [INFO] signed certificate with serial number 519889020802859634745052650360293826859115396234
+2018/04/23 14:41:30 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:30 [DEBUG] Saved serial number as hex 5b10a145854e9892782000d77dfebf57bdeabc8a
+2018/04/23 14:41:30 [DEBUG] saved certificate with serial number 519889020802859634745052650360293826859115396234
+2018/04/23 14:41:30 [INFO] 127.0.0.1:35350 - "POST /enroll" 200
+2018/04/23 14:41:30 [DEBUG] Received request
+POST /enroll
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{"hosts":["peer.Amazon.com","peer"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBSzCB8gIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV\nBAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEvmJo5t5cmCAA2mvG\nTRV69SjMMCxIYW0Sj3iFiUzy9jJRjD/f5Y3kmPU0qjrbRfJvbdCcBhMJnlIF6BYi\nnD+J+KAzMDEGCSqGSIb3DQEJDjEkMCIwIAYDVR0RBBkwF4IPcGVlci5BbWF6b24u\nY29tggRwZWVyMAoGCCqGSM49BAMCA0gAMEUCIQCd9Rf/HTbMuz3FjkFXHj2HMMrU\nD+tEC9bPF+ggFmDeIgIgExGfrfM0U4RdmFWfikrbMFe1Fn7p96DPn5+tIT+rjxI=\n-----END CERTIFICATE REQUEST-----\n","profile":"tls","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:30 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:30 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:30 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 2
+2018/04/23 14:41:30 [DEBUG] Successfully incremented state for identity admin to 3
+2018/04/23 14:41:30 [DEBUG] DB: identity admin successfully logged in
+2018/04/23 14:41:30 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:30 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:30 [DEBUG] Enrollment request: {SignRequest:{Hosts:[peer.Amazon.com peer] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBSzCB8gIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV
+BAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEvmJo5t5cmCAA2mvG
+TRV69SjMMCxIYW0Sj3iFiUzy9jJRjD/f5Y3kmPU0qjrbRfJvbdCcBhMJnlIF6BYi
+nD+J+KAzMDEGCSqGSIb3DQEJDjEkMCIwIAYDVR0RBBkwF4IPcGVlci5BbWF6b24u
+Y29tggRwZWVyMAoGCCqGSM49BAMCA0gAMEUCIQCd9Rf/HTbMuz3FjkFXHj2HMMrU
+D+tEC9bPF+ggFmDeIgIgExGfrfM0U4RdmFWfikrbMFe1Fn7p96DPn5+tIT+rjxI=
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile:tls CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:30 [DEBUG] csrAuthCheck: enrollment ID=admin, CommonName=admin, Subject=<nil>
+2018/04/23 14:41:30 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:30 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:30 [INFO] signed certificate with serial number 320983488050752284630013908976292062556611091649
+2018/04/23 14:41:30 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:30 [DEBUG] Saved serial number as hex 383965bc46f8a2162b033aef3d4e506bf4bf1cc1
+2018/04/23 14:41:30 [DEBUG] saved certificate with serial number 320983488050752284630013908976292062556611091649
+2018/04/23 14:41:30 [INFO] 127.0.0.1:35352 - "POST /enroll" 200
+2018/04/23 14:41:31 [DEBUG] Received request
+POST /register
+Authorization: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNRRENDQWVhZ0F3SUJBZ0lVSWJkNHBtYWw4VXhPLy81QlpTUk95TXNUdlRvd0NnWUlLb1pJemowRUF3SXcKYURFTE1Ba0dBMVVFQmhNQ1ZWTXhGekFWQmdOVkJBZ1REazV2Y25Sb0lFTmhjbTlzYVc1aE1SUXdFZ1lEVlFRSwpFd3RJZVhCbGNteGxaR2RsY2pFUE1BMEdBMVVFQ3hNR1JtRmljbWxqTVJrd0Z3WURWUVFERXhCbVlXSnlhV010ClkyRXRjMlZ5ZG1WeU1CNFhEVEU0TURReU16RTBNell3TUZvWERURTVNRFF5TXpFME16WXdNRm93WFRFTE1Ba0cKQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdURGs1dmNuUm9JRU5oY205c2FXNWhNUlF3RWdZRFZRUUtFd3RJZVhCbApjbXhsWkdkbGNqRVBNQTBHQTFVRUN4TUdSbUZpY21sak1RNHdEQVlEVlFRREV3VmhaRzFwYmpCWk1CTUdCeXFHClNNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJNU0hOdm9TSjV5a3FBWHQyUGQrYzgxL2JwaXprbmZLVmJLNzQvYVEKenBQTjB1cmMyMEl5NzRHZ0ppaEJSZDRJZTB2SG1PVDRBOVBqZDM4TFVUaklKZVdqZVRCM01BNEdBMVVkRHdFQgovd1FFQXdJSGdEQU1CZ05WSFJNQkFmOEVBakFBTUIwR0ExVWREZ1FXQkJUYThNald6V21lY3hldzlyTDNmTzhHCmlsZzdXakFmQmdOVkhTTUVHREFXZ0JUNnVlUzcrZU9wRVc3d1VhdnB3Vjd6YnQ2dldEQVhCZ05WSFJFRUVEQU8KZ2d3ek1UYzNaV0kyWldReU9URXdDZ1lJS29aSXpqMEVBd0lEU0FBd1JRSWhBUHJ6dUVvQUVCTXF3Ukd6UU4zUQo4RENReXdteXpPandSRDR3eElGU0pua09BaUJpWDI4OG93VE9IQUg4VGJoQWtjWWhrcDhzbkwycDQvbEV3ckVUClYxWTJMUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K.MEUCIQDVRRZYqBIThlW+9LmUV2FOAG+l13Gj5TiS1em7p0O25wIgBMrpDVYNESqTIrhxNQJ6/L6LRNbqa3Q63N2p77f8ovE=
+{"id":"peer.Amazon.com","type":"user","secret":"secret","max_enrollments":-1,"affiliation":"org1","attrs":[{"name":"","value":""}]}
+2018/04/23 14:41:31 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:31 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/04/23 14:41:31 [DEBUG] DB: Get certificate by serial (21b778a666a5f14c4efffe4165244ec8cb13bd3a) and aki (fab9e4bbf9e3a9116ef051abe9c15ef36edeaf58)
+2018/04/23 14:41:31 [DEBUG] Successful authentication of 'admin'
+2018/04/23 14:41:31 [DEBUG] Register request received
+2018/04/23 14:41:31 [DEBUG] Received registration request from admin: &{RegistrationRequest:{Name:peer.Amazon.com Type:user Secret:<<user-specified>> MaxEnrollments:-1 Affiliation:org1 Attributes:[{Name: Value:}] CAName:}}
+2018/04/23 14:41:31 [DEBUG] canRegister - Check to see if user admin can register
+2018/04/23 14:41:31 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:31 [DEBUG] Validate ID
+2018/04/23 14:41:31 [DEBUG] An affiliation is required for identity type user
+2018/04/23 14:41:31 [DEBUG] Validating affiliation: org1
+2018/04/23 14:41:31 [DEBUG] DB: Get affiliation org1
+2018/04/23 14:41:31 [DEBUG] Registering user id: peer.Amazon.com
+2018/04/23 14:41:31 [DEBUG] Max enrollment value verification - User specified max enrollment: -1, CA max enrollment: -1
+2018/04/23 14:41:31 [DEBUG] DB: Getting identity peer.Amazon.com
+2018/04/23 14:41:31 [DEBUG] DB: Add identity peer.Amazon.com
+2018/04/23 14:41:31 [DEBUG] Successfully added identity peer.Amazon.com to the database
+2018/04/23 14:41:31 [DEBUG] Registration completed - sending response 0xc420028168
+2018/04/23 14:41:31 [INFO] 127.0.0.1:35354 - "POST /register" 200
+2018/04/23 14:41:31 [DEBUG] Received request
+POST /enroll
+Authorization: Basic cGVlci5BbWF6b24uY29tOnNlY3JldA==
+{"hosts":["3177eb6ed291"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBTDCB8wIBADBnMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxGDAWBgNV\nBAMTD3BlZXIuQW1hem9uLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABF6q\nDv8Njfc4/eYI6DUOaZkbr6V34nqXkAqWiuziQs8Si1sWyhRyqLGUgyrTFXHfvjeN\nwMycD0+fDpOFw4MY//OgKjAoBgkqhkiG9w0BCQ4xGzAZMBcGA1UdEQQQMA6CDDMx\nNzdlYjZlZDI5MTAKBggqhkjOPQQDAgNIADBFAiEArzaBUc6NnJlTEYtVQCzzppOh\ndSVDLrDF1Of/dgUWo8YCIHBCUiQXTbB1SGTuME8Fp5T4TENfCTVtBwKolMnMEMkf\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:31 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:31 [DEBUG] DB: Getting identity peer.Amazon.com
+2018/04/23 14:41:31 [DEBUG] DB: Login user peer.Amazon.com with max enrollments of -1 and state of 0
+2018/04/23 14:41:31 [DEBUG] Successfully incremented state for identity peer.Amazon.com to 1
+2018/04/23 14:41:31 [DEBUG] DB: identity peer.Amazon.com successfully logged in
+2018/04/23 14:41:31 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:31 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:31 [DEBUG] Enrollment request: {SignRequest:{Hosts:[3177eb6ed291] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBTDCB8wIBADBnMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxGDAWBgNV
+BAMTD3BlZXIuQW1hem9uLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABF6q
+Dv8Njfc4/eYI6DUOaZkbr6V34nqXkAqWiuziQs8Si1sWyhRyqLGUgyrTFXHfvjeN
+wMycD0+fDpOFw4MY//OgKjAoBgkqhkiG9w0BCQ4xGzAZMBcGA1UdEQQQMA6CDDMx
+NzdlYjZlZDI5MTAKBggqhkjOPQQDAgNIADBFAiEArzaBUc6NnJlTEYtVQCzzppOh
+dSVDLrDF1Of/dgUWo8YCIHBCUiQXTbB1SGTuME8Fp5T4TENfCTVtBwKolMnMEMkf
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:31 [DEBUG] csrAuthCheck: enrollment ID=peer.Amazon.com, CommonName=peer.Amazon.com, Subject=<nil>
+2018/04/23 14:41:31 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:31 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:31 [INFO] signed certificate with serial number 580290723326184298750941069182401551131191751754
+2018/04/23 14:41:31 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:31 [DEBUG] Saved serial number as hex 65a522cfc2e2b3089139e53c328c4e55550f344a
+2018/04/23 14:41:31 [DEBUG] saved certificate with serial number 580290723326184298750941069182401551131191751754
+2018/04/23 14:41:31 [INFO] 127.0.0.1:35356 - "POST /enroll" 200
+2018/04/23 14:41:31 [DEBUG] Received request
+POST /cainfo
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{}
+2018/04/23 14:41:31 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:31 [DEBUG] Received request for server info
+2018/04/23 14:41:31 [INFO] 127.0.0.1:35358 - "POST /cainfo" 200

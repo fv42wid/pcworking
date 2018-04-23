@@ -1,0 +1,313 @@
+2018/04/23 14:41:34 [INFO] Created default configuration file at /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root/fabric-ca-server-config.yaml
+2018/04/23 14:41:34 [INFO] Starting server in home directory: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root
+2018/04/23 14:41:34 [DEBUG] CA Home Directory: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root
+2018/04/23 14:41:34 [DEBUG] Making server filenames absolute
+2018/04/23 14:41:34 [DEBUG] Initializing default CA in directory /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root
+2018/04/23 14:41:34 [DEBUG] Init CA with home /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root and config {CA:{Name: Keyfile:ca-key.pem Certfile:ca-cert.pem Chainfile:ca-chain.pem} Signing:0xc420292910 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[3177eb6ed291 localhost] KeyRequest:<nil> CA:0xc42028bec0 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Registrar.Roles:client,user,peer,validator,auditor hf.Registrar.DelegateRoles:client,user,validator,auditor hf.Revoker:1 hf.IntermediateCA:1]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) TLS:{false [ldap-server-cert.pem] {ldap-client-key.pem ldap-client-cert.pem}}  } DB:{ Type:sqlite3 Datasource:fabric-ca-server.db TLS:{false [db-server-cert.pem] {db-client-key.pem db-client-cert.pem}}  } CSP:0xc42028a620 Client:<nil> Intermediate:{ParentServer:{URL: CAName:} TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{Name: Secret: Profile: Label: CSR:<nil> CAName:}}}
+2018/04/23 14:41:34 [DEBUG] CA Home Directory: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root
+2018/04/23 14:41:34 [DEBUG] Initializing BCCSP: &{ProviderName:SW SwOpts:0xc420271e00 Pkcs11Opts:<nil>}
+2018/04/23 14:41:34 [DEBUG] Initializing BCCSP with software options &{SecLevel:256 HashFamily:SHA2 Ephemeral:false FileKeystore:0xc42028d3b0 DummyKeystore:<nil>}
+2018/04/23 14:41:34 [DEBUG] Initialize key material
+2018/04/23 14:41:34 [DEBUG] Making CA filenames absolute
+2018/04/23 14:41:34 [DEBUG] Getting CA cert; parent server URL is ''
+2018/04/23 14:41:34 [DEBUG] Root CA certificate request: {CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[3177eb6ed291 localhost] KeyRequest:0xc420296c00 CA:0xc42028bec0 SerialNumber:}
+2018/04/23 14:41:34 [INFO] generating key: &{A:ecdsa S:256}
+2018/04/23 14:41:34 [DEBUG] generate key from request: algo=ecdsa, size=256
+2018/04/23 14:41:34 [INFO] encoded CSR
+2018/04/23 14:41:34 [DEBUG] validating configuration
+2018/04/23 14:41:34 [DEBUG] validate local profile
+2018/04/23 14:41:34 [DEBUG] profile is valid
+2018/04/23 14:41:34 [INFO] signed certificate with serial number 642210228177919211023232758842135866994167370510
+2018/04/23 14:41:34 [INFO] The CA key and certificate were generated for CA 
+2018/04/23 14:41:34 [INFO] The key was stored by BCCSP provider 'SW'
+2018/04/23 14:41:34 [INFO] The certificate is at: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root/ca-cert.pem
+2018/04/23 14:41:34 [DEBUG] Initializing DB
+2018/04/23 14:41:34 [DEBUG] Using sqlite database, connect to database in home (/etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root/fabric-ca-server.db) directory
+2018/04/23 14:41:34 [DEBUG] Creating SQLite database (/etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root/fabric-ca-server.db) if it does not exist...
+2018/04/23 14:41:34 [DEBUG] Creating users table if it does not exist
+2018/04/23 14:41:34 [DEBUG] Creating affiliations table if it does not exist
+2018/04/23 14:41:34 [DEBUG] Creating certificates table if it does not exist
+2018/04/23 14:41:34 [DEBUG] Successfully opened sqlite3 DB
+2018/04/23 14:41:34 [DEBUG] Initializing identity registry
+2018/04/23 14:41:34 [DEBUG] Loading identity table
+2018/04/23 14:41:34 [DEBUG] Loading identity 'admin'
+2018/04/23 14:41:34 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:34 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+2018/04/23 14:41:34 [DEBUG] DB: Add identity admin
+2018/04/23 14:41:34 [DEBUG] Successfully added identity admin to the database
+2018/04/23 14:41:34 [DEBUG] Registered identity: { Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:-1 Attrs:map[hf.Registrar.Roles:client,user,peer,validator,auditor hf.Registrar.DelegateRoles:client,user,validator,auditor hf.Revoker:1 hf.IntermediateCA:1]  }
+2018/04/23 14:41:34 [DEBUG] Successfully loaded identity table
+2018/04/23 14:41:34 [DEBUG] Initialized DB identity registry
+2018/04/23 14:41:34 [DEBUG] Loading affiliations table
+2018/04/23 14:41:34 [DEBUG] DB: Add affiliation org1
+2018/04/23 14:41:34 [DEBUG] Affiliation 'org1' added
+2018/04/23 14:41:34 [DEBUG] DB: Add affiliation org1.department1
+2018/04/23 14:41:34 [DEBUG] Affiliation 'org1.department1' added
+2018/04/23 14:41:34 [DEBUG] DB: Add affiliation org1.department2
+2018/04/23 14:41:34 [DEBUG] Affiliation 'org1.department2' added
+2018/04/23 14:41:34 [DEBUG] DB: Add affiliation org2
+2018/04/23 14:41:34 [DEBUG] Affiliation 'org2' added
+2018/04/23 14:41:34 [DEBUG] DB: Add affiliation org2.department1
+2018/04/23 14:41:34 [DEBUG] Affiliation 'org2.department1' added
+2018/04/23 14:41:34 [DEBUG] Successfully loaded affiliations table
+2018/04/23 14:41:34 [INFO] Initialized sqlite3 database at /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root/fabric-ca-server.db
+2018/04/23 14:41:34 [DEBUG] Initializing enrollment signer
+2018/04/23 14:41:34 [DEBUG] validating configuration
+2018/04/23 14:41:34 [DEBUG] validate local profile
+2018/04/23 14:41:34 [DEBUG] profile is valid
+2018/04/23 14:41:34 [DEBUG] validate local profile
+2018/04/23 14:41:34 [DEBUG] profile is valid
+2018/04/23 14:41:34 [DEBUG] CA initialization successful
+2018/04/23 14:41:34 [INFO] Home directory for default CA: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Dell.com/ca/root
+2018/04/23 14:41:34 [DEBUG] 1 CA instance(s) running on server
+2018/04/23 14:41:34 [INFO] Listening on http://0.0.0.0:7108
+2018/04/23 14:41:35 [DEBUG] Received request
+POST /enroll
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{"hosts":["root","root"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBPzCB5wIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV\nBAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQ8UXFzjNxrSNKArc\nrACO8wvubW0/JwNQD2cu7fcEaEH/6PQ0A+84ZzKWEhyZPzfthyf1CIg6nNcCO3uU\n3UCQy6AoMCYGCSqGSIb3DQEJDjEZMBcwFQYDVR0RBA4wDIIEcm9vdIIEcm9vdDAK\nBggqhkjOPQQDAgNHADBEAiB5ht7WD6gC9EYBLLUcg+lFbuyin3IYnYIC6XxKvjSu\nDwIgG2aX70AD2f/6Yoqvy3ZtYaJ4KeAXdoj4WoYIsDN5b78=\n-----END CERTIFICATE REQUEST-----\n","profile":"tls","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:35 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:35 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:35 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 0
+2018/04/23 14:41:35 [DEBUG] Successfully incremented state for identity admin to 1
+2018/04/23 14:41:35 [DEBUG] DB: identity admin successfully logged in
+2018/04/23 14:41:35 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:35 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:35 [DEBUG] Enrollment request: {SignRequest:{Hosts:[root root] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBPzCB5wIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV
+BAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQ8UXFzjNxrSNKArc
+rACO8wvubW0/JwNQD2cu7fcEaEH/6PQ0A+84ZzKWEhyZPzfthyf1CIg6nNcCO3uU
+3UCQy6AoMCYGCSqGSIb3DQEJDjEZMBcwFQYDVR0RBA4wDIIEcm9vdIIEcm9vdDAK
+BggqhkjOPQQDAgNHADBEAiB5ht7WD6gC9EYBLLUcg+lFbuyin3IYnYIC6XxKvjSu
+DwIgG2aX70AD2f/6Yoqvy3ZtYaJ4KeAXdoj4WoYIsDN5b78=
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile:tls CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:35 [DEBUG] csrAuthCheck: enrollment ID=admin, CommonName=admin, Subject=<nil>
+2018/04/23 14:41:35 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:35 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:35 [INFO] signed certificate with serial number 539608065745182429803412420043749383084956302809
+2018/04/23 14:41:35 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:35 [DEBUG] Saved serial number as hex 5e84dcce5aa04f7ca3663330ac74d4f473cdbdd9
+2018/04/23 14:41:35 [DEBUG] saved certificate with serial number 539608065745182429803412420043749383084956302809
+2018/04/23 14:41:35 [INFO] 127.0.0.1:55604 - "POST /enroll" 200
+2018/04/23 14:41:35 [DEBUG] Received request
+POST /enroll
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{"hosts":["3177eb6ed291"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBQTCB6QIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV\nBAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAErUJdVaJmTIzIGgWN\n24UyQsaw9g+q1YXviRnQ846H76Cz8YLpQubIeEa4s4xsHUu3p1kqp2Acg+tFmle+\nV3l8r6AqMCgGCSqGSIb3DQEJDjEbMBkwFwYDVR0RBBAwDoIMMzE3N2ViNmVkMjkx\nMAoGCCqGSM49BAMCA0cAMEQCIH8w9x/eZsFmj/1MhzhgoM1pkpgEww1UZwP9g3En\naQIBAiBPSurroEFJqiprciwTgNjCiFj3r+r7sM/Ap2eHlwDXWw==\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:35 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:35 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:35 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 1
+2018/04/23 14:41:35 [DEBUG] Successfully incremented state for identity admin to 2
+2018/04/23 14:41:35 [DEBUG] DB: identity admin successfully logged in
+2018/04/23 14:41:35 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:35 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:35 [DEBUG] Enrollment request: {SignRequest:{Hosts:[3177eb6ed291] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBQTCB6QIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV
+BAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAErUJdVaJmTIzIGgWN
+24UyQsaw9g+q1YXviRnQ846H76Cz8YLpQubIeEa4s4xsHUu3p1kqp2Acg+tFmle+
+V3l8r6AqMCgGCSqGSIb3DQEJDjEbMBkwFwYDVR0RBBAwDoIMMzE3N2ViNmVkMjkx
+MAoGCCqGSM49BAMCA0cAMEQCIH8w9x/eZsFmj/1MhzhgoM1pkpgEww1UZwP9g3En
+aQIBAiBPSurroEFJqiprciwTgNjCiFj3r+r7sM/Ap2eHlwDXWw==
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:35 [DEBUG] csrAuthCheck: enrollment ID=admin, CommonName=admin, Subject=<nil>
+2018/04/23 14:41:35 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:35 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:35 [INFO] signed certificate with serial number 354006066366751528060231919258790565920833310128
+2018/04/23 14:41:35 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:35 [DEBUG] Saved serial number as hex 3e022e57ed6630830ad800eca687a5f1bcf48db0
+2018/04/23 14:41:35 [DEBUG] saved certificate with serial number 354006066366751528060231919258790565920833310128
+2018/04/23 14:41:35 [INFO] 127.0.0.1:55606 - "POST /enroll" 200
+2018/04/23 14:41:35 [DEBUG] Received request
+POST /register
+Authorization: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNRRENDQWVhZ0F3SUJBZ0lVUGdJdVYrMW1NSU1LMkFEc3BvZWw4YnowamJBd0NnWUlLb1pJemowRUF3SXcKYURFTE1Ba0dBMVVFQmhNQ1ZWTXhGekFWQmdOVkJBZ1REazV2Y25Sb0lFTmhjbTlzYVc1aE1SUXdFZ1lEVlFRSwpFd3RJZVhCbGNteGxaR2RsY2pFUE1BMEdBMVVFQ3hNR1JtRmljbWxqTVJrd0Z3WURWUVFERXhCbVlXSnlhV010ClkyRXRjMlZ5ZG1WeU1CNFhEVEU0TURReU16RTBNemN3TUZvWERURTVNRFF5TXpFME16Y3dNRm93WFRFTE1Ba0cKQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdURGs1dmNuUm9JRU5oY205c2FXNWhNUlF3RWdZRFZRUUtFd3RJZVhCbApjbXhsWkdkbGNqRVBNQTBHQTFVRUN4TUdSbUZpY21sak1RNHdEQVlEVlFRREV3VmhaRzFwYmpCWk1CTUdCeXFHClNNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJLMUNYVldpWmt5TXlCb0ZqZHVGTWtMR3NQWVBxdFdGNzRrWjBQT08KaCsrZ3MvR0M2VUxteUhoR3VMT01iQjFMdDZkWktxZGdISVByUlpwWHZsZDVmSytqZVRCM01BNEdBMVVkRHdFQgovd1FFQXdJSGdEQU1CZ05WSFJNQkFmOEVBakFBTUIwR0ExVWREZ1FXQkJSQXZFbWU4ZWV4eTFzZ2F1SXJWMmlhClAxam1xekFmQmdOVkhTTUVHREFXZ0JTQmtlS3dzeTVKKzNwb2kzOGhHeUlTV0NEZnFUQVhCZ05WSFJFRUVEQU8KZ2d3ek1UYzNaV0kyWldReU9URXdDZ1lJS29aSXpqMEVBd0lEU0FBd1JRSWhBTElTVkJ1bDVJcjU4RVczZlFQagpLbmNkUTBVVlNjRnJjTW0vcE5CTmdXZE1BaUJMV1ZsVmdFdlMyMGZyRWNnQ2R6YURHWHpNRFlmQmJIczY4OFFuCnNYMXR5dz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K.MEUCIQCKiDHICxroCI2FRw20w+KMw+b46RlHK7WpahAUJZzvdwIgHYQiL+HztCvVi+lFV/ai+8V+szT3sBQJF6v0VxBPSdE=
+{"id":"nodeAdmin","type":"user","secret":"secret","max_enrollments":-1,"affiliation":"org1","attrs":[{"name":"","value":""}]}
+2018/04/23 14:41:35 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:35 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/04/23 14:41:35 [DEBUG] DB: Get certificate by serial (3e022e57ed6630830ad800eca687a5f1bcf48db0) and aki (8191e2b0b32e49fb7a688b7f211b22125820dfa9)
+2018/04/23 14:41:35 [DEBUG] Successful authentication of 'admin'
+2018/04/23 14:41:35 [DEBUG] Register request received
+2018/04/23 14:41:35 [DEBUG] Received registration request from admin: &{RegistrationRequest:{Name:nodeAdmin Type:user Secret:<<user-specified>> MaxEnrollments:-1 Affiliation:org1 Attributes:[{Name: Value:}] CAName:}}
+2018/04/23 14:41:35 [DEBUG] canRegister - Check to see if user admin can register
+2018/04/23 14:41:35 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:35 [DEBUG] Validate ID
+2018/04/23 14:41:35 [DEBUG] An affiliation is required for identity type user
+2018/04/23 14:41:35 [DEBUG] Validating affiliation: org1
+2018/04/23 14:41:35 [DEBUG] DB: Get affiliation org1
+2018/04/23 14:41:35 [DEBUG] Registering user id: nodeAdmin
+2018/04/23 14:41:35 [DEBUG] Max enrollment value verification - User specified max enrollment: -1, CA max enrollment: -1
+2018/04/23 14:41:35 [DEBUG] DB: Getting identity nodeAdmin
+2018/04/23 14:41:35 [DEBUG] DB: Add identity nodeAdmin
+2018/04/23 14:41:36 [DEBUG] Successfully added identity nodeAdmin to the database
+2018/04/23 14:41:36 [DEBUG] Registration completed - sending response 0xc420028760
+2018/04/23 14:41:36 [INFO] 127.0.0.1:55608 - "POST /register" 200
+2018/04/23 14:41:36 [DEBUG] Received request
+POST /enroll
+Authorization: Basic bm9kZUFkbWluOnNlY3JldA==
+{"hosts":["3177eb6ed291"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBRjCB7QIBADBhMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxEjAQBgNV\nBAMTCW5vZGVBZG1pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABFQUE8RSeUxT\nkdYvLRe1iE2CzY9VQY9IlR6ddTR4fEQ6c3PjBHOyy7jX/syZ7N7ZSlg/S21IMhzi\n4Rj9mcuoYE2gKjAoBgkqhkiG9w0BCQ4xGzAZMBcGA1UdEQQQMA6CDDMxNzdlYjZl\nZDI5MTAKBggqhkjOPQQDAgNIADBFAiEAqZk56Vx4FvzAMX6cFRBV13FVauS7TSDo\nfCGkcGhRtLoCIGTo4RdIkfiT+/ef0dfgX8IQHpI7ffkM/gk/sIryg2NO\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:36 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:36 [DEBUG] DB: Getting identity nodeAdmin
+2018/04/23 14:41:36 [DEBUG] DB: Login user nodeAdmin with max enrollments of -1 and state of 0
+2018/04/23 14:41:36 [DEBUG] Successfully incremented state for identity nodeAdmin to 1
+2018/04/23 14:41:36 [DEBUG] DB: identity nodeAdmin successfully logged in
+2018/04/23 14:41:36 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:36 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:36 [DEBUG] Enrollment request: {SignRequest:{Hosts:[3177eb6ed291] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBRjCB7QIBADBhMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxEjAQBgNV
+BAMTCW5vZGVBZG1pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABFQUE8RSeUxT
+kdYvLRe1iE2CzY9VQY9IlR6ddTR4fEQ6c3PjBHOyy7jX/syZ7N7ZSlg/S21IMhzi
+4Rj9mcuoYE2gKjAoBgkqhkiG9w0BCQ4xGzAZMBcGA1UdEQQQMA6CDDMxNzdlYjZl
+ZDI5MTAKBggqhkjOPQQDAgNIADBFAiEAqZk56Vx4FvzAMX6cFRBV13FVauS7TSDo
+fCGkcGhRtLoCIGTo4RdIkfiT+/ef0dfgX8IQHpI7ffkM/gk/sIryg2NO
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:36 [DEBUG] csrAuthCheck: enrollment ID=nodeAdmin, CommonName=nodeAdmin, Subject=<nil>
+2018/04/23 14:41:36 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:36 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:36 [INFO] signed certificate with serial number 353112560469036516863955821512092497907653861060
+2018/04/23 14:41:36 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:36 [DEBUG] Saved serial number as hex 3dda1d6616e0987ac96443fdef0172e7d24cdec4
+2018/04/23 14:41:36 [DEBUG] saved certificate with serial number 353112560469036516863955821512092497907653861060
+2018/04/23 14:41:36 [INFO] 127.0.0.1:55610 - "POST /enroll" 200
+2018/04/23 14:41:36 [DEBUG] Received request
+POST /register
+Authorization: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNRRENDQWVhZ0F3SUJBZ0lVUGdJdVYrMW1NSU1LMkFEc3BvZWw4YnowamJBd0NnWUlLb1pJemowRUF3SXcKYURFTE1Ba0dBMVVFQmhNQ1ZWTXhGekFWQmdOVkJBZ1REazV2Y25Sb0lFTmhjbTlzYVc1aE1SUXdFZ1lEVlFRSwpFd3RJZVhCbGNteGxaR2RsY2pFUE1BMEdBMVVFQ3hNR1JtRmljbWxqTVJrd0Z3WURWUVFERXhCbVlXSnlhV010ClkyRXRjMlZ5ZG1WeU1CNFhEVEU0TURReU16RTBNemN3TUZvWERURTVNRFF5TXpFME16Y3dNRm93WFRFTE1Ba0cKQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdURGs1dmNuUm9JRU5oY205c2FXNWhNUlF3RWdZRFZRUUtFd3RJZVhCbApjbXhsWkdkbGNqRVBNQTBHQTFVRUN4TUdSbUZpY21sak1RNHdEQVlEVlFRREV3VmhaRzFwYmpCWk1CTUdCeXFHClNNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJLMUNYVldpWmt5TXlCb0ZqZHVGTWtMR3NQWVBxdFdGNzRrWjBQT08KaCsrZ3MvR0M2VUxteUhoR3VMT01iQjFMdDZkWktxZGdISVByUlpwWHZsZDVmSytqZVRCM01BNEdBMVVkRHdFQgovd1FFQXdJSGdEQU1CZ05WSFJNQkFmOEVBakFBTUIwR0ExVWREZ1FXQkJSQXZFbWU4ZWV4eTFzZ2F1SXJWMmlhClAxam1xekFmQmdOVkhTTUVHREFXZ0JTQmtlS3dzeTVKKzNwb2kzOGhHeUlTV0NEZnFUQVhCZ05WSFJFRUVEQU8KZ2d3ek1UYzNaV0kyWldReU9URXdDZ1lJS29aSXpqMEVBd0lEU0FBd1JRSWhBTElTVkJ1bDVJcjU4RVczZlFQagpLbmNkUTBVVlNjRnJjTW0vcE5CTmdXZE1BaUJMV1ZsVmdFdlMyMGZyRWNnQ2R6YURHWHpNRFlmQmJIczY4OFFuCnNYMXR5dz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K.MEQCIG+1n8zkBofEJI07c3QTrkpKjWEgvO3V+Oe40HwH9KyyAiB3dRK/ZrO3NcsxEbC74TrNtaf3yctG4PGtfpLNnH1nqg==
+{"id":"User1@Dell.com","type":"user","secret":"secret","max_enrollments":-1,"affiliation":"org1","attrs":[{"name":"","value":""}]}
+2018/04/23 14:41:36 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:36 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/04/23 14:41:36 [DEBUG] DB: Get certificate by serial (3e022e57ed6630830ad800eca687a5f1bcf48db0) and aki (8191e2b0b32e49fb7a688b7f211b22125820dfa9)
+2018/04/23 14:41:36 [DEBUG] Successful authentication of 'admin'
+2018/04/23 14:41:36 [DEBUG] Register request received
+2018/04/23 14:41:36 [DEBUG] Received registration request from admin: &{RegistrationRequest:{Name:User1@Dell.com Type:user Secret:<<user-specified>> MaxEnrollments:-1 Affiliation:org1 Attributes:[{Name: Value:}] CAName:}}
+2018/04/23 14:41:36 [DEBUG] canRegister - Check to see if user admin can register
+2018/04/23 14:41:36 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:36 [DEBUG] Validate ID
+2018/04/23 14:41:36 [DEBUG] An affiliation is required for identity type user
+2018/04/23 14:41:36 [DEBUG] Validating affiliation: org1
+2018/04/23 14:41:36 [DEBUG] DB: Get affiliation org1
+2018/04/23 14:41:36 [DEBUG] Registering user id: User1@Dell.com
+2018/04/23 14:41:36 [DEBUG] Max enrollment value verification - User specified max enrollment: -1, CA max enrollment: -1
+2018/04/23 14:41:36 [DEBUG] DB: Getting identity User1@Dell.com
+2018/04/23 14:41:36 [DEBUG] DB: Add identity User1@Dell.com
+2018/04/23 14:41:36 [DEBUG] Successfully added identity User1@Dell.com to the database
+2018/04/23 14:41:36 [DEBUG] Registration completed - sending response 0xc420028850
+2018/04/23 14:41:36 [INFO] 127.0.0.1:55612 - "POST /register" 200
+2018/04/23 14:41:36 [DEBUG] Received request
+POST /enroll
+Authorization: Basic VXNlcjFARGVsbC5jb206c2VjcmV0
+{"hosts":["3177eb6ed291"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBSjCB8gIBADBmMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxFzAVBgNV\nBAMMDlVzZXIxQERlbGwuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEBKZu\nF1IOe+9rovi2P2wfbKvC/UdDD1czZLh306G4Wvf+WiSeEHKKwhiBwoEf6A3R1Iiz\n4VWZIak71yp46RoszaAqMCgGCSqGSIb3DQEJDjEbMBkwFwYDVR0RBBAwDoIMMzE3\nN2ViNmVkMjkxMAoGCCqGSM49BAMCA0cAMEQCIBtnsAPBDEpI7r1pM6XyjlG0Yc8h\nlJ99eCx0lfzl10jrAiBEPVpUvtjRUQsM2U80cdt2jh9jm4xTGWZc9qmou2Gktw==\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:36 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:36 [DEBUG] DB: Getting identity User1@Dell.com
+2018/04/23 14:41:36 [DEBUG] DB: Login user User1@Dell.com with max enrollments of -1 and state of 0
+2018/04/23 14:41:36 [DEBUG] Successfully incremented state for identity User1@Dell.com to 1
+2018/04/23 14:41:36 [DEBUG] DB: identity User1@Dell.com successfully logged in
+2018/04/23 14:41:36 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:36 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:36 [DEBUG] Enrollment request: {SignRequest:{Hosts:[3177eb6ed291] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBSjCB8gIBADBmMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxFzAVBgNV
+BAMMDlVzZXIxQERlbGwuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEBKZu
+F1IOe+9rovi2P2wfbKvC/UdDD1czZLh306G4Wvf+WiSeEHKKwhiBwoEf6A3R1Iiz
+4VWZIak71yp46RoszaAqMCgGCSqGSIb3DQEJDjEbMBkwFwYDVR0RBBAwDoIMMzE3
+N2ViNmVkMjkxMAoGCCqGSM49BAMCA0cAMEQCIBtnsAPBDEpI7r1pM6XyjlG0Yc8h
+lJ99eCx0lfzl10jrAiBEPVpUvtjRUQsM2U80cdt2jh9jm4xTGWZc9qmou2Gktw==
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:36 [DEBUG] csrAuthCheck: enrollment ID=User1@Dell.com, CommonName=User1@Dell.com, Subject=<nil>
+2018/04/23 14:41:36 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:36 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:36 [INFO] signed certificate with serial number 47498109263867500296413804304755351912722146347
+2018/04/23 14:41:36 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:36 [DEBUG] Saved serial number as hex 851e38dc939eb2f749a836485b64b71f877242b
+2018/04/23 14:41:36 [DEBUG] saved certificate with serial number 47498109263867500296413804304755351912722146347
+2018/04/23 14:41:36 [INFO] 127.0.0.1:55614 - "POST /enroll" 200
+2018/04/23 14:41:36 [DEBUG] Received request
+POST /enroll
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{"hosts":["peer.Dell.com","peer"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBSTCB8AIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV\nBAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEVnZ4TCis5HIxUEz1\nHG2ecqmcKYO7DdylB1ASbkScT20SznzVdgTPg+tqLPPmeK8GNKbzb/vwsOAuJX4d\nFjcAUaAxMC8GCSqGSIb3DQEJDjEiMCAwHgYDVR0RBBcwFYINcGVlci5EZWxsLmNv\nbYIEcGVlcjAKBggqhkjOPQQDAgNIADBFAiEA+TiSTPXvhfqB8mSn4/LUgYQi3Oa7\noQhcCyMLE2r9mv0CIDMYnwxVbLqzFW17uNYI31TQgWXtzKMI1DliISEwnsLm\n-----END CERTIFICATE REQUEST-----\n","profile":"tls","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:36 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:36 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:36 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 2
+2018/04/23 14:41:36 [DEBUG] Successfully incremented state for identity admin to 3
+2018/04/23 14:41:36 [DEBUG] DB: identity admin successfully logged in
+2018/04/23 14:41:36 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:36 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:36 [DEBUG] Enrollment request: {SignRequest:{Hosts:[peer.Dell.com peer] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBSTCB8AIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV
+BAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEVnZ4TCis5HIxUEz1
+HG2ecqmcKYO7DdylB1ASbkScT20SznzVdgTPg+tqLPPmeK8GNKbzb/vwsOAuJX4d
+FjcAUaAxMC8GCSqGSIb3DQEJDjEiMCAwHgYDVR0RBBcwFYINcGVlci5EZWxsLmNv
+bYIEcGVlcjAKBggqhkjOPQQDAgNIADBFAiEA+TiSTPXvhfqB8mSn4/LUgYQi3Oa7
+oQhcCyMLE2r9mv0CIDMYnwxVbLqzFW17uNYI31TQgWXtzKMI1DliISEwnsLm
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile:tls CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:36 [DEBUG] csrAuthCheck: enrollment ID=admin, CommonName=admin, Subject=<nil>
+2018/04/23 14:41:36 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:36 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:36 [INFO] signed certificate with serial number 199804138355048767125065418733926911634886959391
+2018/04/23 14:41:36 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:36 [DEBUG] Saved serial number as hex 22ff8705c4a7dd719996f65ac03517ad4331211f
+2018/04/23 14:41:36 [DEBUG] saved certificate with serial number 199804138355048767125065418733926911634886959391
+2018/04/23 14:41:36 [INFO] 127.0.0.1:55616 - "POST /enroll" 200
+2018/04/23 14:41:36 [DEBUG] Received request
+POST /register
+Authorization: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNRRENDQWVhZ0F3SUJBZ0lVUGdJdVYrMW1NSU1LMkFEc3BvZWw4YnowamJBd0NnWUlLb1pJemowRUF3SXcKYURFTE1Ba0dBMVVFQmhNQ1ZWTXhGekFWQmdOVkJBZ1REazV2Y25Sb0lFTmhjbTlzYVc1aE1SUXdFZ1lEVlFRSwpFd3RJZVhCbGNteGxaR2RsY2pFUE1BMEdBMVVFQ3hNR1JtRmljbWxqTVJrd0Z3WURWUVFERXhCbVlXSnlhV010ClkyRXRjMlZ5ZG1WeU1CNFhEVEU0TURReU16RTBNemN3TUZvWERURTVNRFF5TXpFME16Y3dNRm93WFRFTE1Ba0cKQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdURGs1dmNuUm9JRU5oY205c2FXNWhNUlF3RWdZRFZRUUtFd3RJZVhCbApjbXhsWkdkbGNqRVBNQTBHQTFVRUN4TUdSbUZpY21sak1RNHdEQVlEVlFRREV3VmhaRzFwYmpCWk1CTUdCeXFHClNNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJLMUNYVldpWmt5TXlCb0ZqZHVGTWtMR3NQWVBxdFdGNzRrWjBQT08KaCsrZ3MvR0M2VUxteUhoR3VMT01iQjFMdDZkWktxZGdISVByUlpwWHZsZDVmSytqZVRCM01BNEdBMVVkRHdFQgovd1FFQXdJSGdEQU1CZ05WSFJNQkFmOEVBakFBTUIwR0ExVWREZ1FXQkJSQXZFbWU4ZWV4eTFzZ2F1SXJWMmlhClAxam1xekFmQmdOVkhTTUVHREFXZ0JTQmtlS3dzeTVKKzNwb2kzOGhHeUlTV0NEZnFUQVhCZ05WSFJFRUVEQU8KZ2d3ek1UYzNaV0kyWldReU9URXdDZ1lJS29aSXpqMEVBd0lEU0FBd1JRSWhBTElTVkJ1bDVJcjU4RVczZlFQagpLbmNkUTBVVlNjRnJjTW0vcE5CTmdXZE1BaUJMV1ZsVmdFdlMyMGZyRWNnQ2R6YURHWHpNRFlmQmJIczY4OFFuCnNYMXR5dz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K.MEUCIQDap+2XCduYrrEf2ZsLqjJrCD5R4rShRaoZ5+OWuaRjrgIgUwG5f4PQkh3KxbUd0irm8XqKLXrWmfIzcFlyHvuw67k=
+{"id":"peer.Dell.com","type":"user","secret":"secret","max_enrollments":-1,"affiliation":"org1","attrs":[{"name":"","value":""}]}
+2018/04/23 14:41:36 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:36 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/04/23 14:41:36 [DEBUG] DB: Get certificate by serial (3e022e57ed6630830ad800eca687a5f1bcf48db0) and aki (8191e2b0b32e49fb7a688b7f211b22125820dfa9)
+2018/04/23 14:41:36 [DEBUG] Successful authentication of 'admin'
+2018/04/23 14:41:36 [DEBUG] Register request received
+2018/04/23 14:41:36 [DEBUG] Received registration request from admin: &{RegistrationRequest:{Name:peer.Dell.com Type:user Secret:<<user-specified>> MaxEnrollments:-1 Affiliation:org1 Attributes:[{Name: Value:}] CAName:}}
+2018/04/23 14:41:36 [DEBUG] canRegister - Check to see if user admin can register
+2018/04/23 14:41:36 [DEBUG] DB: Getting identity admin
+2018/04/23 14:41:36 [DEBUG] Validate ID
+2018/04/23 14:41:36 [DEBUG] An affiliation is required for identity type user
+2018/04/23 14:41:36 [DEBUG] Validating affiliation: org1
+2018/04/23 14:41:36 [DEBUG] DB: Get affiliation org1
+2018/04/23 14:41:36 [DEBUG] Registering user id: peer.Dell.com
+2018/04/23 14:41:36 [DEBUG] Max enrollment value verification - User specified max enrollment: -1, CA max enrollment: -1
+2018/04/23 14:41:36 [DEBUG] DB: Getting identity peer.Dell.com
+2018/04/23 14:41:36 [DEBUG] DB: Add identity peer.Dell.com
+2018/04/23 14:41:36 [DEBUG] Successfully added identity peer.Dell.com to the database
+2018/04/23 14:41:36 [DEBUG] Registration completed - sending response 0xc420028168
+2018/04/23 14:41:36 [INFO] 127.0.0.1:55618 - "POST /register" 200
+2018/04/23 14:41:37 [DEBUG] Received request
+POST /enroll
+Authorization: Basic cGVlci5EZWxsLmNvbTpzZWNyZXQ=
+{"hosts":["3177eb6ed291"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBSTCB8QIBADBlMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxFjAUBgNV\nBAMTDXBlZXIuRGVsbC5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAT//ITu\nVTrk0wbK9cXWId5Z2F9PLAVYy1HAEDR1zt2q0Lz0+8aG79xMhnUeZotKxcJ7BAmG\nlMKzahOEIkNKXX97oCowKAYJKoZIhvcNAQkOMRswGTAXBgNVHREEEDAOggwzMTc3\nZWI2ZWQyOTEwCgYIKoZIzj0EAwIDRwAwRAIgTzxMUuOEZ4GD5Uc2groP/pMwTHYa\nNEEAK34+3Y/bPGwCIFPyx1mWSvSAid3lkxVjgP4MCnSReN6aSVRBmKQ3AUNK\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/04/23 14:41:37 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:37 [DEBUG] DB: Getting identity peer.Dell.com
+2018/04/23 14:41:37 [DEBUG] DB: Login user peer.Dell.com with max enrollments of -1 and state of 0
+2018/04/23 14:41:37 [DEBUG] Successfully incremented state for identity peer.Dell.com to 1
+2018/04/23 14:41:37 [DEBUG] DB: identity peer.Dell.com successfully logged in
+2018/04/23 14:41:37 [DEBUG] Identity/Pass was correct
+2018/04/23 14:41:37 [DEBUG] Received request for endpoint enroll
+2018/04/23 14:41:37 [DEBUG] Enrollment request: {SignRequest:{Hosts:[3177eb6ed291] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBSTCB8QIBADBlMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxFjAUBgNV
+BAMTDXBlZXIuRGVsbC5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAT//ITu
+VTrk0wbK9cXWId5Z2F9PLAVYy1HAEDR1zt2q0Lz0+8aG79xMhnUeZotKxcJ7BAmG
+lMKzahOEIkNKXX97oCowKAYJKoZIhvcNAQkOMRswGTAXBgNVHREEEDAOggwzMTc3
+ZWI2ZWQyOTEwCgYIKoZIzj0EAwIDRwAwRAIgTzxMUuOEZ4GD5Uc2groP/pMwTHYa
+NEEAK34+3Y/bPGwCIFPyx1mWSvSAid3lkxVjgP4MCnSReN6aSVRBmKQ3AUNK
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/04/23 14:41:37 [DEBUG] csrAuthCheck: enrollment ID=peer.Dell.com, CommonName=peer.Dell.com, Subject=<nil>
+2018/04/23 14:41:37 [DEBUG] CSR authorization check passed
+2018/04/23 14:41:37 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/04/23 14:41:37 [INFO] signed certificate with serial number 306876933601092728200745545639544727895747153446
+2018/04/23 14:41:37 [DEBUG] DB: Insert Certificate
+2018/04/23 14:41:37 [DEBUG] Saved serial number as hex 35c0d66e9d47cc7b116a578b4d6235bd237d4e26
+2018/04/23 14:41:37 [DEBUG] saved certificate with serial number 306876933601092728200745545639544727895747153446
+2018/04/23 14:41:37 [INFO] 127.0.0.1:55620 - "POST /enroll" 200
+2018/04/23 14:41:37 [DEBUG] Received request
+POST /cainfo
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{}
+2018/04/23 14:41:37 [DEBUG] Directing traffic to default CA
+2018/04/23 14:41:37 [DEBUG] Received request for server info
+2018/04/23 14:41:37 [INFO] 127.0.0.1:55622 - "POST /cainfo" 200

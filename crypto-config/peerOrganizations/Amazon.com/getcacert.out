@@ -1,0 +1,3 @@
+2018/04/23 14:41:31 [INFO] User provided config file: crypto-config/peerOrganizations/Amazon.com/fabric-ca-client-config.yaml
+2018/04/23 14:41:31 [INFO] Configuration file location: /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/fabric-ca-client-config.yaml
+2018/04/23 14:41:31 [INFO] Stored CA root certificate at /etc/hyperledger/fabric-ca-server/crypto-config/peerOrganizations/Amazon.com/msp/cacerts/localhost-7104.pem

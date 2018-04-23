@@ -37,7 +37,7 @@ services:
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/peer/
       - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.Asus.com:7051
     volumes:
-      - ./crypto-config/peerOrganizations/Asus.com/peers/peer0.Asus.com/msp:/etc/hyperledger/msp/peer
+      - ./crypto-config/peerOrganizations/Asus.com/peers/peer.Asus.com/msp:/etc/hyperledger/msp/peer
       #- ./peer0.Asus.com:/var/hyperledger/production
     ports:
       - 7051:7051
@@ -59,7 +59,7 @@ services:
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/peer/
       - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.Dell.com:7051
     volumes:
-      - ./crypto-config/peerOrganizations/Dell.com/peers/peer0.Dell.com/msp:/etc/hyperledger/msp/peer
+      - ./crypto-config/peerOrganizations/Dell.com/peers/peer.Dell.com/msp:/etc/hyperledger/msp/peer
       #- ./peer0.Dell.com:/var/hyperledger/production
     ports:
       - 10051:7051
@@ -81,7 +81,7 @@ services:
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/peer/
       - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.HP.com:7051
     volumes:
-      - ./crypto-config/peerOrganizations/HP.com/peers/peer0.HP.com/msp:/etc/hyperledger/msp/peer
+      - ./crypto-config/peerOrganizations/HP.com/peers/peer.HP.com/msp:/etc/hyperledger/msp/peer
       #- ./peer0.HP.com:/var/hyperledger/production
     ports:
       - 9051:7051
@@ -103,7 +103,7 @@ services:
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/peer/
       - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.Amazon.com:7051
     volumes:
-      - ./crypto-config/peerOrganizations/Amazon.com/peers/peer0.Amazon.com/msp:/etc/hyperledger/msp/peer
+      - ./crypto-config/peerOrganizations/Amazon.com/peers/peer.Amazon.com/msp:/etc/hyperledger/msp/peer
       #- ./peer0.Amazon.com:/var/hyperledger/production
     ports:
       - 8051:7051
