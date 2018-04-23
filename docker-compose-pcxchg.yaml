@@ -184,21 +184,6 @@ services:
     networks:
       - pcxchg
 
-  client.Amazon:
-    tty: true
-    image: hyperledger/fabric-ca:x86_64-1.0.0
-    container_name: client.Amazon
-    environment:
-      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-client
-      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
-    volumes:
-      - ./crypto-config/peerOrganizations/Amazon.com/users/:/etc/hyperledger/ fabric-ca-client
-    depends_on:
-      - ca.Amazon
-    command: sh -c 'sleep 5;fabric-ca-client enroll -u http://admin:adminpw@ca.Amazon:7054;sleep 10000'
-    networks:
-      - pcxchg
-
   ca.Amazon:
     image: hyperledger/fabric-ca:x86_64-1.0.0
     environment:
