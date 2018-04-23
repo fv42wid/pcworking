@@ -1,0 +1,13 @@
+{
+   "name": "AsusAdmin",
+   "mspid": "AsusMSP",
+   "roles": null,
+   "affiliation": "",
+   "enrollmentSecret": "",
+   "enrollment": {
+      "signingIdentity": "fbbbb3aabb9dca9a8d731558969798141aa7942bf5f66e2cfedc3adb642e3d7a",
+      "identity": {
+         "certificate": "-----BEGIN CERTIFICATE-----\nMIICAjCCAaigAwIBAgIRAMcrXUi1igywnMgvsCgOF8MwCgYIKoZIzj0EAwIwYzEL\nMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG\ncmFuY2lzY28xETAPBgNVBAoTCEFzdXMuY29tMRQwEgYDVQQDEwtjYS5Bc3VzLmNv\nbTAeFw0xNzExMTQxNTIyMjRaFw0yNzExMTIxNTIyMjRaMFMxCzAJBgNVBAYTAlVT\nMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRcw\nFQYDVQQDDA5BZG1pbkBBc3VzLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA\nBJ5ZFqM+TkBZmCrWt1VdXSo+BY6NMRrgdfmOO8mHu3J1rGcaBmaa0Ky7idQ0tA6F\niM6JVVwmzD8BH4uu8UXXnOijTTBLMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8E\nAjAAMCsGA1UdIwQkMCKAIEHbc9hZ3sN2+3EAliFvxOiGNySAnsol4m+NFEmWtw/A\nMAoGCCqGSM49BAMCA0gAMEUCIQC1rC+YERAmAN9EeyjLtHHEO/+s26vtoFUHY855\n++rpPQIgbG+QOBIRtKI/ng6nanCep0UsdqbExx+O0aY/9VnTa5k=\n-----END CERTIFICATE-----\n"
+      }
+   }
+}
